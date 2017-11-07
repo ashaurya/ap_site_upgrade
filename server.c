@@ -245,7 +245,8 @@ void site_upgrade() {
 	uint8_t _remaining = 100;
 	for(int i = 0; i < 100; i++) {
 		node_table[i].reset_required = 1;
-		
+
+		/*
 		if(strcmp(node_table[i].version, buf)) {
 			if(node_table[i].reboot_lock == 0) {
 				node_table[i].reset_required = 1;
@@ -258,11 +259,15 @@ void site_upgrade() {
 				}
 			}
 		}
+
+		*/
 		
 	}
 	site_upgrade_counter++;
+	/*
 	if(_remaining) {
 		sleep(200);
 		site_upgrade();
 	}
+	*/
 }

@@ -8,7 +8,7 @@ all: server.c client.c
 	$(CC) table_data.c -o table_data
 
 tar:
-	tar -cJf ap_ste.tar.xz client.c client.h client_handle.c Makefile server.c server.h version_server.c
+	tar -cJf ap_site.tar.xz client.c client.h client_handle.c Makefile server.c server.h version_server.c
 
 debug: server.c client.c
 	$(DD) server.c -o server
