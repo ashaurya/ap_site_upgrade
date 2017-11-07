@@ -1,25 +1,28 @@
-##Neighbor-Lock Upgrade Algorithm##
+__Neighbor-Lock Upgrade Algorithm__
 
 Resets one AP, locks nearby AP, resets next one and so on. Sleeps for 200 seconds after one cycle
 
-###How to compile###
+__How to compile__
 
-___All___ 
+_All_ 
 make all
 
-___Debug___
+_Debug_
 To enable debug (gdb): make debug
 
-___Compress___
+_Compress_
 make tar
 
-___Clean___
+_Clean_
 make clean
 
 
-###Execution###
+__Execution__
 
-./version\_server : ___END to kill the server, any other command to increase version number___
-./server : ___KILLS to kill the server, RESET to trigger the site upgrade (resets)___
-./client 100 : ___Start 100 Clients___
-./table\_data : ___Query Table Data___
+./version\_server : _END to kill the server, any other command to increase version number_
+
+./server : _KILLS to kill the server, RESET to trigger the site upgrade (resets)_
+
+./client 100 : _Start 100 Clients_
+
+./table\_data : _Query Table Data_
