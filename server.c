@@ -198,6 +198,8 @@ int neighbor_table() {
 	return 0;
 }
 
+
+//redundant 
 void *lookup(uint8_t *MAC, uint8_t code) {
 
 	int n;

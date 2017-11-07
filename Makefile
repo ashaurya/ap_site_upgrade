@@ -17,6 +17,6 @@ debug: server.c client.c
 	$(CC) table_data.c -o table_data
 
 clean:
-	rm -f client server version_server client_handle table_data
+	rm -f client server version_server client_handle table_data ap_site.tar.xz
 	rm -f *\~
 	rm -f .*.swp
